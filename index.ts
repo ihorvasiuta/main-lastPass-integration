@@ -1,11 +1,5 @@
 // index.ts
 
-
-
-
-
-
-//with PG
 const request = require('request');
 const winston = require('winston');
 const { Client } = require('pg');
@@ -65,8 +59,10 @@ async function getLastPassUserData(username) {
 async function storeUserDataInDatabase(userData) {
   try {
     await client.connect();
-    const query = `INSERT INTO maintable (last_login, sites, last_pw_change) VALUES ($1, $2, $3)`;
-    const values = [userData.last_login, userData.sites, userData.last_pw_change];
+    const query = `INSERT INTO secondtable (username, last_login, sites, last_pw_change) VALUES ($1, $2, $3, $4)`;
+    const userId = Object.keys(userData.Users)[0];
+    const user = userData.Users[userId];
+    const values = [user.username, user.last_login, user.sites, user.last_pw_change];
     await client.query(query, values);
     logger.info(`Successfully stored data in database`);
   } catch (error) {
@@ -77,9 +73,11 @@ async function storeUserDataInDatabase(userData) {
   }
 }
 
+
 async function main() {
   try {
     const userData = await getLastPassUserData("testing.akk32@gmail.com");
+    console.log(userData);
     await storeUserDataInDatabase(userData);
   } catch (error) {
     logger.error(`An error occurred while running the script: ${error}`);
