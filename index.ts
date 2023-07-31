@@ -4,6 +4,7 @@
 const request = require('request');
 const winston = require('winston');
 const { Client } = require('pg');
+require('dotenv').config();
 
 // Set up the logger using the winston module
 const logger = winston.createLogger({
@@ -19,7 +20,7 @@ const client = new Client({
   host: "localhost",
   user: "postgres",
   port: 5432,
-  password: "0000", 
+  password: process.env.DB_PASSWORD, 
   database: "mainlastpassintegration"
 });
 
@@ -33,8 +34,8 @@ async function getLastPassUserData(username) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      "cid": 26272911,
-      "provhash": "3d04fc60d502489779c5bad0329e0a996255850ee9c2e42e85eeb2b7d5ec47eb",
+      "cid": process.env.LASTPASS_CID,
+      "provhash": process.env.LASTPASS_PROVHASH,
       "cmd": "getuserdata",
       "data": {
         "username": username
@@ -87,7 +88,7 @@ async function storeUserDataInDatabase(userData) {
 async function main() {
   try {
     // Get user data from the LastPass API
-    const userData = await getLastPassUserData("testing.akk32@gmail.com");
+    const userData = await getLastPassUserData(process.env.LASTPASS_USERNAME);
     // Log the user data to the console for debugging purposes
     console.log(userData);
     // Store the user data in the PostgreSQL database
