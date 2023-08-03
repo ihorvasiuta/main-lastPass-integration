@@ -16,3 +16,16 @@ model Event {
   data       String
   created_at DateTime @default(now())
 }
+
+
+model User {
+  id        Int     @id @default(autoincrement())
+  username  String
+  fullname String
+  admin  Boolean?
+  last_login  DateTime?
+  last_pw_change DateTime
+  sites  Int?
+  disabled  Boolean?
+  created_at DateTime
+}

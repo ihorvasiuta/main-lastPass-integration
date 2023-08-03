@@ -15,7 +15,6 @@ const prisma = new PrismaClient({
 const logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
-  defaultMeta: { service: 'user-service' },
   transports: [
     new winston.transports.Console(),
   ],
@@ -58,10 +57,48 @@ async function getAndStoreLastPassEvents() {
   }
 }
 
+async function getAndStoreLastPassUsers() {
+  try {
+    const response = await axios.post('https://lastpass.com/enterpriseapi.php', {
+      cid: process.env.LASTPASS_CID,
+      provhash: process.env.LASTPASS_PROVHASH,
+      cmd: 'getuserdata',
+      data: {}
+    });
+
+    for (const key in response.data.Users) {
+      const userData = response.data.Users[key];
+      await prisma.user.create({
+        data: {
+          username: userData.username,
+          fullname: userData.fullname,
+          admin: userData.admin,
+          last_login: userData.last_login ? new Date(userData.last_login) : null,
+          last_pw_change: new Date(userData.last_pw_change),
+          sites: userData.sites,
+          disabled: userData.disabled,
+          created_at: new Date()
+        }
+      });
+    }
+
+    logger.info(`Successfully stored user data in database`);
+  } catch (error) {
+    logger.error(`An error occurred while retrieving and storing user data: ${error}`);
+  }
+}
+
+
+
+
+
 async function main() {
   try {
     // Get event data from the LastPass API and store it in the database
     await getAndStoreLastPassEvents();
+    
+    // Get user data from the LastPass API and store it in the database
+    await getAndStoreLastPassUsers();
   } catch (error) {
     logger.error(`An error occurred while running the script: ${error}`);
   }
