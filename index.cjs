@@ -1,3 +1,5 @@
+//index.cjs
+
 const axios = require('axios');
 const { PrismaClient } = require('@prisma/client');
 const winston = require('winston');
