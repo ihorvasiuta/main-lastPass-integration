@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    environment:
+      DATABASE_URL: postgresql://postgres@db/postgres
+      LASTPASS_CID: ${LASTPASS_CID}
+      LASTPASS_PROVHASH: ${LASTPASS_PROVHASH}
+    depends_on:
+      - db
+
+  db:
+    image: postgres
