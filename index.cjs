@@ -1,5 +1,3 @@
-//index.cjs
-
 const axios = require('axios');
 const { PrismaClient } = require('@prisma/client');
 const winston = require('winston');
@@ -22,7 +20,6 @@ const logger = winston.createLogger({
   ],
 });
 
-
 async function getAndStoreLastPassEvents() {
   try {
     const response = await axios.post('https://lastpass.com/enterpriseapi.php', {
@@ -35,12 +32,23 @@ async function getAndStoreLastPassEvents() {
       }
     });
 
+    if (response.status !== 200) {
+      throw new Error(`Failed to retrieve event data: ${response.statusText}`);
+    }
+
     if (response.data.status !== 'OK') {
       throw new Error(`Failed to retrieve event data: ${response.data}`);
     }
 
     for (const key in response.data.data) {
       const eventData = response.data.data[key];
+
+      // Validate the data before storing it in the database
+      if (!eventData.Time || !eventData.Username || !eventData.IP_Address || !eventData.Action || !eventData.Data) {
+        logger.warn(`Invalid event data: ${JSON.stringify(eventData)}`);
+        continue;
+      }
+
       await prisma.event.create({
         data: {
           event_time: new Date(eventData.Time),
@@ -89,10 +97,6 @@ async function getAndStoreLastPassUsers() {
     logger.error(`An error occurred while retrieving and storing user data: ${error}`);
   }
 }
-
-
-
-
 
 async function main() {
   try {
