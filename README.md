@@ -10,14 +10,20 @@ The integration focuses on fetching user and activity data from LastPass and sto
 
 1. Clone this repository:
 
+You can clone this project using command:
+
     git clone https://github.com/ihorvasiuta/main-lastPass-integration/tree/main
     cd main-lastPass-integration
 
 2. Install dependencies:
 
+You can install dependencies using command:
+
     npm install
 
-3. Create a .env file in the root directory with the following variables:
+3. Create a .env file:
+
+Create a .env file in the root directory with the following variables:
 
     DATABASE_URL=postgresql://postgres@db/postgres
     LASTPASS_CID=your_lastpass_cid
