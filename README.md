@@ -12,7 +12,7 @@ The integration focuses on fetching user and activity data from LastPass and sto
 
 You can clone this project using command:
 
-    git clone https://github.com/ihorvasiuta/main-lastPass-integration/tree/main
+    git clone https://github.com/ihorvasiuta/main-lastPass-integration
     cd main-lastPass-integration
 
 2. Create a .env file:
@@ -32,7 +32,7 @@ Create a .env file in the root directory with the following variables:
     DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}
 ```
 
-Replace `your_lastpass_cid`` and `your_lastpass_provhash`` with your LastPass CID and Provhash.
+Replace `your_lastpass_cid` and `your_lastpass_provhash` with your LastPass CID and Provhash.
 
 4. Running with Docker:
 
