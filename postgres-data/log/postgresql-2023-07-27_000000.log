@@ -1,0 +1,20 @@
+2023-07-28 06:31:06.847 CEST [36844] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:08.240 CEST [38380] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:19.495 CEST [45636] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:29.842 CEST [44320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:29.846 CEST [44240] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:29.847 CEST [44272] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:29.847 CEST [44208] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:31:29.847 CEST [44112] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-28 06:32:18.450 CEST [6092] ERROR:  canceling statement due to user request
+2023-07-28 06:32:18.460 CEST [8816] LOG:  shutting down
+2023-07-28 06:32:18.462 CEST [8816] LOG:  checkpoint starting: shutdown immediate
+2023-07-28 06:32:18.472 CEST [8816] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.013 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3436 kB

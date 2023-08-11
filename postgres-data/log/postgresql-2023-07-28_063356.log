@@ -1,0 +1,50 @@
+2023-07-28 06:33:56.934 CEST [7680] LOG:  database system was shut down at 2023-07-28 06:32:18 CEST
+2023-07-28 06:38:56.931 CEST [7640] LOG:  checkpoint starting: time
+2023-07-28 06:38:57.383 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.430 s, sync=0.010 s, total=0.453 s; sync files=6, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB
+2023-07-28 12:37:35.378 CEST [26512] FATAL:  password authentication failed for user "postgres"
+2023-07-28 12:37:35.378 CEST [26512] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-07-28 12:37:35.434 CEST [15036] FATAL:  password authentication failed for user "postgres"
+2023-07-28 12:37:35.434 CEST [15036] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-07-28 12:37:35.481 CEST [1828] FATAL:  password authentication failed for user "postgres"
+2023-07-28 12:37:35.481 CEST [1828] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-07-28 12:37:35.529 CEST [28304] FATAL:  password authentication failed for user "postgres"
+2023-07-28 12:37:35.529 CEST [28304] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-07-28 12:37:35.576 CEST [27392] FATAL:  password authentication failed for user "postgres"
+2023-07-28 12:37:35.576 CEST [27392] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2023-07-30 21:23:01.724 CEST [16788] FATAL:  database "main-lastpass" does not exist
+2023-07-30 21:23:51.782 CEST [17740] ERROR:  syntax error at or near "-" at character 21
+2023-07-30 21:23:51.782 CEST [17740] STATEMENT:  CREATE DATABASE main-lastpass
+	CREATE DATABASE main-lastpass;
+2023-07-30 21:25:51.743 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 21:27:33.679 CEST [7640] LOG:  checkpoint complete: wrote 925 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=101.688 s, sync=0.228 s, total=101.939 s; sync files=252, longest=0.004 s, average=0.001 s; distance=4228 kB, estimate=4228 kB
+2023-07-30 21:32:55.649 CEST [23288] ERROR:  relation "mainlastpassintegration" does not exist at character 13
+2023-07-30 21:32:55.649 CEST [23288] STATEMENT:  INSERT INTO mainlastpassintegration (last_login, sites, last_pw_change) VALUES ($1, $2, $3)
+2023-07-30 21:35:51.717 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 21:35:53.935 CEST [41832] ERROR:  relation "mainlastpassintegration" does not exist at character 13
+2023-07-30 21:35:53.935 CEST [41832] STATEMENT:  INSERT INTO mainlastpassintegration (last_login, sites, last_pw_change) VALUES ($1, $2, $3)
+2023-07-30 21:35:54.632 CEST [7640] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.866 s, sync=0.029 s, total=2.915 s; sync files=21, longest=0.003 s, average=0.002 s; distance=165 kB, estimate=3821 kB
+2023-07-30 21:38:28.425 CEST [28808] ERROR:  relation "mainlastpassintegration" does not exist at character 13
+2023-07-30 21:38:28.425 CEST [28808] STATEMENT:  INSERT INTO mainlastpassintegration (last_login, sites, last_pw_change) VALUES ($1, $2, $3)
+2023-07-30 21:40:51.646 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 21:40:52.865 CEST [7640] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.188 s, sync=0.015 s, total=1.220 s; sync files=9, longest=0.003 s, average=0.002 s; distance=8 kB, estimate=3440 kB
+2023-07-30 21:59:03.108 CEST [18860] ERROR:  there is no parameter $0 at character 67
+2023-07-30 21:59:03.108 CEST [18860] STATEMENT:  INSERT INTO maintable (last_login, sites, last_pw_change) VALUES ($0, $1, $2)
+2023-07-30 21:59:21.814 CEST [26024] ERROR:  column "last_login" is of type timestamp without time zone but expression is of type integer at character 67
+2023-07-30 21:59:21.814 CEST [26024] HINT:  You will need to rewrite or cast the expression.
+2023-07-30 21:59:21.814 CEST [26024] STATEMENT:  INSERT INTO maintable (last_login, sites, last_pw_change) VALUES (0, 1, 2)
+2023-07-30 22:00:51.884 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 22:00:52.800 CEST [7640] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.880 s, sync=0.016 s, total=0.917 s; sync files=8, longest=0.004 s, average=0.002 s; distance=0 kB, estimate=3096 kB
+2023-07-30 23:02:33.121 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 23:02:33.475 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.330 s, sync=0.009 s, total=0.355 s; sync files=4, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=2786 kB
+2023-07-30 23:03:41.290 CEST [28868] ERROR:  column "username" of relation "maintable" does not exist at character 24
+2023-07-30 23:03:41.290 CEST [28868] STATEMENT:  INSERT INTO maintable (username, last_login, sites, last_pw_change) VALUES ($1, $2, $3)
+2023-07-30 23:08:49.512 CEST [40112] ERROR:  INSERT has more target columns than expressions at character 55
+2023-07-30 23:08:49.512 CEST [40112] STATEMENT:  INSERT INTO secondtable (username, last_login, sites, last_pw_change) VALUES ($1, $2, $3)
+2023-07-30 23:10:40.647 CEST [38984] ERROR:  syntax error at or near "$" at character 92
+2023-07-30 23:10:40.647 CEST [38984] STATEMENT:  INSERT INTO secondtable (username, last_login, sites, last_pw_change) VALUES ($1, $2, $3, 4$)
+2023-07-30 23:12:33.492 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 23:12:37.612 CEST [7640] LOG:  checkpoint complete: wrote 38 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.067 s, sync=0.034 s, total=4.120 s; sync files=33, longest=0.003 s, average=0.002 s; distance=138 kB, estimate=2522 kB
+2023-07-30 23:52:33.683 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 23:52:34.033 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.326 s, sync=0.009 s, total=0.351 s; sync files=4, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=2269 kB
+2023-07-30 23:57:33.031 CEST [7640] LOG:  checkpoint starting: time
+2023-07-30 23:57:33.395 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.337 s, sync=0.007 s, total=0.364 s; sync files=4, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=2043 kB

@@ -1,0 +1,257 @@
+2023-08-03 00:12:28.037 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 00:12:29.162 CEST [7640] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.099 s, sync=0.013 s, total=1.126 s; sync files=7, longest=0.004 s, average=0.002 s; distance=29 kB, estimate=1229 kB
+2023-08-03 00:16:14.732 CEST [11628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:16:15.297 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:16:15.322 CEST [7640] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.006 s, sync=0.008 s, total=0.025 s; sync files=9, longest=0.002 s, average=0.001 s; distance=4347 kB, estimate=4347 kB
+2023-08-03 00:16:15.839 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:16:15.858 CEST [7640] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.006 s, total=0.019 s; sync files=6, longest=0.002 s, average=0.001 s; distance=4278 kB, estimate=4340 kB
+2023-08-03 00:16:15.980 CEST [26880] FATAL:  database "prisma_migrate_shadow_db_5810a871-8080-419c-b642-aee7d0cbe703" does not exist
+2023-08-03 00:16:15.980 CEST [26880] DETAIL:  It seems to have just been dropped or renamed.
+2023-08-03 00:16:16.321 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:16:16.334 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.014 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4278 kB, estimate=4334 kB
+2023-08-03 00:17:15.139 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:17:15.154 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.016 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4279 kB, estimate=4328 kB
+2023-08-03 00:17:15.298 CEST [19412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:22:15.167 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 00:22:16.770 CEST [7640] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.563 s, sync=0.019 s, total=1.603 s; sync files=14, longest=0.005 s, average=0.002 s; distance=53 kB, estimate=3901 kB
+2023-08-03 00:26:06.312 CEST [36180] ERROR:  relation "public.Event" does not exist at character 13
+2023-08-03 00:26:06.312 CEST [36180] STATEMENT:  INSERT INTO "public"."Event" ("event_time","username","ip_address","action","data","created_at") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "public"."Event"."id", "public"."Event"."event_time", "public"."Event"."username", "public"."Event"."ip_address", "public"."Event"."action", "public"."Event"."data", "public"."Event"."created_at"
+2023-08-03 00:27:15.773 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 00:27:16.112 CEST [7640] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.325 s, sync=0.004 s, total=0.340 s; sync files=3, longest=0.003 s, average=0.002 s; distance=7 kB, estimate=3511 kB
+2023-08-03 00:29:24.277 CEST [40388] ERROR:  relation "public.Event" does not exist at character 13
+2023-08-03 00:29:24.277 CEST [40388] STATEMENT:  INSERT INTO "public"."Event" ("event_time","username","ip_address","action","data","created_at") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "public"."Event"."id", "public"."Event"."event_time", "public"."Event"."username", "public"."Event"."ip_address", "public"."Event"."action", "public"."Event"."data", "public"."Event"."created_at"
+2023-08-03 00:32:15.124 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 00:32:15.820 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.639 s, sync=0.042 s, total=0.696 s; sync files=5, longest=0.031 s, average=0.009 s; distance=41 kB, estimate=3164 kB
+2023-08-03 00:34:52.439 CEST [41312] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:34:53.018 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:34:53.049 CEST [7640] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.009 s, sync=0.010 s, total=0.032 s; sync files=9, longest=0.002 s, average=0.002 s; distance=4313 kB, estimate=4313 kB
+2023-08-03 00:34:53.691 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:34:53.720 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.008 s, total=0.029 s; sync files=7, longest=0.002 s, average=0.002 s; distance=4285 kB, estimate=4310 kB
+2023-08-03 00:34:54.329 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:34:54.342 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.013 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4285 kB, estimate=4308 kB
+2023-08-03 00:34:54.945 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:34:54.964 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.005 s, total=0.020 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4285 kB, estimate=4306 kB
+2023-08-03 00:34:55.091 CEST [4340] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:35:25.972 CEST [21644] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:35:26.541 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:35:26.572 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.007 s, sync=0.006 s, total=0.031 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4286 kB, estimate=4304 kB
+2023-08-03 00:35:27.323 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:35:27.350 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.006 s, total=0.028 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4286 kB, estimate=4302 kB
+2023-08-03 00:35:27.936 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:35:27.964 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.029 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4286 kB, estimate=4300 kB
+2023-08-03 00:36:07.473 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:36:07.499 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.006 s, sync=0.005 s, total=0.027 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4286 kB, estimate=4299 kB
+2023-08-03 00:36:07.638 CEST [38908] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:36:35.149 CEST [21480] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 00:36:35.611 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:36:35.632 CEST [7640] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.009 s, total=0.022 s; sync files=10, longest=0.002 s, average=0.001 s; distance=4308 kB, estimate=4308 kB
+2023-08-03 00:36:36.277 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:36:36.304 CEST [7640] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.006 s, total=0.027 s; sync files=5, longest=0.002 s, average=0.002 s; distance=4287 kB, estimate=4306 kB
+2023-08-03 00:36:36.903 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:36:36.930 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.028 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4288 kB, estimate=4304 kB
+2023-08-03 00:36:37.517 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:36:37.547 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.005 s, sync=0.005 s, total=0.030 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4288 kB, estimate=4303 kB
+2023-08-03 00:36:37.673 CEST [10248] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:38:36.929 CEST [37740] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:38:37.563 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:38:37.586 CEST [7640] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.009 s, total=0.024 s; sync files=8, longest=0.002 s, average=0.002 s; distance=4310 kB, estimate=4310 kB
+2023-08-03 00:38:38.216 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:38:38.242 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.005 s, total=0.026 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4289 kB, estimate=4308 kB
+2023-08-03 00:38:38.828 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:38:38.855 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.006 s, total=0.028 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4289 kB, estimate=4306 kB
+2023-08-03 00:38:39.456 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:38:39.489 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.006 s, sync=0.005 s, total=0.033 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4284 kB, estimate=4304 kB
+2023-08-03 00:38:39.614 CEST [23924] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:39:03.248 CEST [2696] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 00:39:03.894 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:39:03.906 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.013 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4284 kB, estimate=4302 kB
+2023-08-03 00:39:04.555 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:39:04.581 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.026 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4284 kB, estimate=4300 kB
+2023-08-03 00:39:05.169 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:39:05.196 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.009 s, total=0.027 s; sync files=4, longest=0.005 s, average=0.003 s; distance=4285 kB, estimate=4299 kB
+2023-08-03 00:39:05.681 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:39:05.698 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.004 s, sync=0.003 s, total=0.017 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4285 kB, estimate=4297 kB
+2023-08-03 00:39:05.825 CEST [40184] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:39:05.940 CEST [10836] FATAL:  database 17090 does not exist
+2023-08-03 00:40:49.945 CEST [38056] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:40:50.619 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:40:50.641 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.005 s, total=0.022 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4285 kB, estimate=4296 kB
+2023-08-03 00:40:51.152 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:40:51.166 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.014 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4285 kB, estimate=4295 kB
+2023-08-03 00:40:51.735 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:40:51.761 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.027 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4286 kB, estimate=4294 kB
+2023-08-03 00:40:52.359 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:40:52.388 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.004 s, sync=0.006 s, total=0.030 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4286 kB, estimate=4293 kB
+2023-08-03 00:40:52.514 CEST [5272] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:41:09.018 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:41:09.033 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.005 s, total=0.016 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4286 kB, estimate=4293 kB
+2023-08-03 00:41:09.575 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:41:09.587 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.012 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4286 kB, estimate=4292 kB
+2023-08-03 00:41:10.180 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:41:10.205 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.005 s, total=0.026 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4287 kB, estimate=4291 kB
+2023-08-03 00:41:49.390 CEST [23968] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:41:59.327 CEST [14548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:41:59.774 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:41:59.792 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.004 s, sync=0.003 s, total=0.018 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4287 kB, estimate=4291 kB
+2023-08-03 00:42:00.430 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:42:00.445 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.015 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4287 kB, estimate=4291 kB
+2023-08-03 00:42:01.030 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:42:01.044 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.015 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4288 kB, estimate=4290 kB
+2023-08-03 00:42:01.168 CEST [3908] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:43:00.843 CEST [43220] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 00:43:01.443 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:43:01.465 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.005 s, sync=0.004 s, total=0.023 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4288 kB, estimate=4290 kB
+2023-08-03 00:43:02.143 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:43:02.160 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.004 s, total=0.017 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4288 kB, estimate=4290 kB
+2023-08-03 00:43:02.776 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:43:02.800 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.025 s; sync files=4, longest=0.004 s, average=0.002 s; distance=4288 kB, estimate=4290 kB
+2023-08-03 00:43:31.481 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:43:31.496 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.015 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4289 kB, estimate=4290 kB
+2023-08-03 00:43:31.651 CEST [4976] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:44:57.523 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:44:57.609 CEST [7640] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.017 s, sync=0.057 s, total=0.087 s; sync files=37, longest=0.009 s, average=0.002 s; distance=4503 kB, estimate=4503 kB
+2023-08-03 00:44:58.148 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:44:58.172 CEST [7640] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.010 s, total=0.025 s; sync files=13, longest=0.002 s, average=0.001 s; distance=4317 kB, estimate=4485 kB
+2023-08-03 00:44:58.664 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:44:58.679 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.015 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4318 kB, estimate=4468 kB
+2023-08-03 00:45:15.803 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 00:45:15.826 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.006 s, total=0.023 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4318 kB, estimate=4453 kB
+2023-08-03 00:45:15.981 CEST [41364] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 00:50:15.831 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 00:50:21.307 CEST [7640] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.434 s, sync=0.029 s, total=5.476 s; sync files=37, longest=0.003 s, average=0.001 s; distance=220 kB, estimate=4030 kB
+2023-08-03 01:06:08.389 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 01:06:09.614 CEST [7640] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.201 s, sync=0.011 s, total=1.225 s; sync files=9, longest=0.003 s, average=0.002 s; distance=34 kB, estimate=3630 kB
+2023-08-03 02:09:09.075 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 02:09:11.310 CEST [7640] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.190 s, sync=0.016 s, total=2.235 s; sync files=10, longest=0.004 s, average=0.002 s; distance=86 kB, estimate=3276 kB
+2023-08-03 15:23:22.131 CEST [12132] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 15:23:22.699 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 15:23:22.721 CEST [7640] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.005 s, sync=0.007 s, total=0.022 s; sync files=8, longest=0.002 s, average=0.001 s; distance=4336 kB, estimate=4336 kB
+2023-08-03 15:23:23.381 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 15:23:23.412 CEST [7640] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.008 s, total=0.032 s; sync files=6, longest=0.003 s, average=0.002 s; distance=4346 kB, estimate=4346 kB
+2023-08-03 15:23:23.907 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 15:23:23.931 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.005 s, total=0.024 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4337 kB, estimate=4345 kB
+2023-08-03 15:23:35.084 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 15:23:35.116 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.006 s, total=0.032 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4337 kB, estimate=4345 kB
+2023-08-03 15:23:35.264 CEST [26940] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 15:28:35.124 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 15:28:40.204 CEST [7640] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.037 s, sync=0.030 s, total=5.080 s; sync files=38, longest=0.002 s, average=0.001 s; distance=221 kB, estimate=3932 kB
+2023-08-03 15:48:19.105 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 15:48:20.209 CEST [7640] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.085 s, sync=0.008 s, total=1.105 s; sync files=5, longest=0.003 s, average=0.002 s; distance=64 kB, estimate=3545 kB
+2023-08-03 15:53:19.215 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 15:53:19.993 CEST [7640] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.758 s, sync=0.006 s, total=0.779 s; sync files=5, longest=0.003 s, average=0.002 s; distance=44 kB, estimate=3195 kB
+2023-08-03 15:58:20.002 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 15:58:20.665 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.640 s, sync=0.009 s, total=0.664 s; sync files=5, longest=0.003 s, average=0.002 s; distance=41 kB, estimate=2880 kB
+2023-08-03 16:03:20.672 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:03:21.431 CEST [7640] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.744 s, sync=0.007 s, total=0.760 s; sync files=5, longest=0.003 s, average=0.002 s; distance=28 kB, estimate=2595 kB
+2023-08-03 16:08:20.434 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:08:21.016 CEST [7640] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.550 s, sync=0.010 s, total=0.583 s; sync files=5, longest=0.004 s, average=0.002 s; distance=23 kB, estimate=2337 kB
+2023-08-03 16:18:20.038 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:18:20.831 CEST [7640] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.768 s, sync=0.009 s, total=0.793 s; sync files=5, longest=0.003 s, average=0.002 s; distance=61 kB, estimate=2110 kB
+2023-08-03 16:23:20.832 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:23:21.947 CEST [7640] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.095 s, sync=0.006 s, total=1.116 s; sync files=5, longest=0.002 s, average=0.002 s; distance=68 kB, estimate=1906 kB
+2023-08-03 16:28:20.948 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:28:22.847 CEST [7640] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.866 s, sync=0.016 s, total=1.899 s; sync files=16, longest=0.002 s, average=0.001 s; distance=24 kB, estimate=1718 kB
+2023-08-03 16:48:20.881 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 16:48:24.096 CEST [7640] LOG:  checkpoint complete: wrote 31 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.188 s, sync=0.012 s, total=3.216 s; sync files=9, longest=0.003 s, average=0.002 s; distance=26 kB, estimate=1548 kB
+2023-08-03 18:36:11.662 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 18:36:15.397 CEST [7640] LOG:  checkpoint complete: wrote 36 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.702 s, sync=0.014 s, total=3.736 s; sync files=9, longest=0.004 s, average=0.002 s; distance=38 kB, estimate=1397 kB
+2023-08-03 18:59:25.519 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 18:59:27.084 CEST [7640] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.536 s, sync=0.011 s, total=1.565 s; sync files=9, longest=0.003 s, average=0.002 s; distance=48 kB, estimate=1262 kB
+2023-08-03 19:10:46.724 CEST [28760] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 19:10:47.387 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:10:47.406 CEST [7640] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.020 s; sync files=9, longest=0.001 s, average=0.001 s; distance=4362 kB, estimate=4362 kB
+2023-08-03 19:10:47.953 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:10:47.973 CEST [7640] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.005 s, total=0.020 s; sync files=5, longest=0.002 s, average=0.001 s; distance=4358 kB, estimate=4361 kB
+2023-08-03 19:10:48.587 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:10:48.623 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.010 s, total=0.036 s; sync files=4, longest=0.005 s, average=0.003 s; distance=4358 kB, estimate=4361 kB
+2023-08-03 19:10:48.755 CEST [44308] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:12:11.856 CEST [31520] LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2023-08-03 19:12:12.509 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:12.530 CEST [7640] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.004 s, sync=0.005 s, total=0.022 s; sync files=5, longest=0.002 s, average=0.001 s; distance=4358 kB, estimate=4361 kB
+2023-08-03 19:12:13.184 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:13.212 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.006 s, total=0.028 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4359 kB, estimate=4360 kB
+2023-08-03 19:12:13.797 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:13.826 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.029 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4359 kB, estimate=4360 kB
+2023-08-03 19:12:33.106 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:33.139 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.007 s, total=0.034 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4359 kB, estimate=4360 kB
+2023-08-03 19:12:33.287 CEST [38008] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:12:46.516 CEST [35616] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:12:46.979 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:47.019 CEST [7640] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.009 s, sync=0.014 s, total=0.040 s; sync files=14, longest=0.004 s, average=0.001 s; distance=4440 kB, estimate=4440 kB
+2023-08-03 19:12:47.704 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:47.742 CEST [7640] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.013 s, total=0.039 s; sync files=12, longest=0.002 s, average=0.002 s; distance=4381 kB, estimate=4434 kB
+2023-08-03 19:12:48.235 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:48.249 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.004 s, total=0.014 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4365 kB, estimate=4427 kB
+2023-08-03 19:12:57.879 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:12:57.902 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.023 s; sync files=4, longest=0.002 s, average=0.002 s; distance=4366 kB, estimate=4421 kB
+2023-08-03 19:12:58.045 CEST [6240] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:17:57.894 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 19:18:02.658 CEST [7640] LOG:  checkpoint complete: wrote 44 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.723 s, sync=0.024 s, total=4.764 s; sync files=37, longest=0.002 s, average=0.001 s; distance=210 kB, estimate=4000 kB
+2023-08-03 19:21:30.433 CEST [5712] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:21:30.920 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:21:30.949 CEST [7640] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.008 s, sync=0.009 s, total=0.029 s; sync files=13, longest=0.001 s, average=0.001 s; distance=4436 kB, estimate=4436 kB
+2023-08-03 19:21:31.610 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:21:31.638 CEST [7640] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.006 s, total=0.028 s; sync files=5, longest=0.002 s, average=0.002 s; distance=4387 kB, estimate=4431 kB
+2023-08-03 19:21:32.165 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:21:32.181 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.016 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4388 kB, estimate=4426 kB
+2023-08-03 19:21:45.612 CEST [7640] LOG:  checkpoint starting: immediate force wait
+2023-08-03 19:21:45.648 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.007 s, sync=0.006 s, total=0.037 s; sync files=4, longest=0.003 s, average=0.002 s; distance=4388 kB, estimate=4423 kB
+2023-08-03 19:21:45.799 CEST [27024] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-08-03 19:26:45.657 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 19:26:47.334 CEST [7640] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.644 s, sync=0.016 s, total=1.678 s; sync files=12, longest=0.003 s, average=0.002 s; distance=58 kB, estimate=3986 kB
+2023-08-03 20:34:27.592 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 20:34:29.587 CEST [7640] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.971 s, sync=0.011 s, total=1.996 s; sync files=7, longest=0.003 s, average=0.002 s; distance=45 kB, estimate=3592 kB
+2023-08-03 21:19:27.665 CEST [7640] LOG:  checkpoint starting: time
+2023-08-03 21:19:29.347 CEST [7640] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.647 s, sync=0.015 s, total=1.682 s; sync files=10, longest=0.003 s, average=0.002 s; distance=36 kB, estimate=3236 kB
+2023-08-03 23:03:12.409 CEST [7904] WARNING:  autovacuum worker took too long to start; canceled
+2023-08-03 23:05:55.622 CEST [7904] WARNING:  autovacuum worker took too long to start; canceled
+2023-08-03 23:08:37.294 CEST [7904] WARNING:  autovacuum worker took too long to start; canceled
+2023-08-03 23:28:55.804 CEST [7904] WARNING:  autovacuum worker took too long to start; canceled
+2023-08-03 23:37:31.277 CEST [22344] WARNING:  autovacuum worker started without a worker entry
+2023-08-03 23:37:31.278 CEST [42456] WARNING:  autovacuum worker started without a worker entry
+2023-08-03 23:37:31.284 CEST [44968] WARNING:  autovacuum worker started without a worker entry
+2023-08-03 23:37:31.307 CEST [812] WARNING:  autovacuum worker started without a worker entry
+2023-08-04 18:07:47.806 CEST [7640] LOG:  checkpoint starting: time
+2023-08-04 18:07:48.721 CEST [7640] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.882 s, sync=0.013 s, total=0.915 s; sync files=8, longest=0.004 s, average=0.002 s; distance=27 kB, estimate=2915 kB
+2023-08-05 00:23:36.312 CEST [7640] LOG:  checkpoint starting: time
+2023-08-05 00:23:36.668 CEST [7640] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.327 s, sync=0.009 s, total=0.356 s; sync files=4, longest=0.003 s, average=0.003 s; distance=2 kB, estimate=2624 kB
+2023-08-05 00:28:36.668 CEST [7640] LOG:  checkpoint starting: time
+2023-08-05 00:28:37.363 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.663 s, sync=0.013 s, total=0.696 s; sync files=7, longest=0.004 s, average=0.002 s; distance=15 kB, estimate=2363 kB
+2023-08-05 01:20:31.126 CEST [7640] LOG:  checkpoint starting: time
+2023-08-05 01:20:31.811 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.660 s, sync=0.010 s, total=0.686 s; sync files=7, longest=0.003 s, average=0.002 s; distance=19 kB, estimate=2129 kB
+2023-08-05 01:25:31.821 CEST [7640] LOG:  checkpoint starting: time
+2023-08-05 01:25:32.850 CEST [7640] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.009 s, sync=0.007 s, total=1.030 s; sync files=8, longest=0.002 s, average=0.001 s; distance=20 kB, estimate=1918 kB
+2023-08-07 23:17:31.927 CEST [7640] LOG:  checkpoint starting: time
+2023-08-07 23:17:32.610 CEST [7640] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.655 s, sync=0.011 s, total=0.687 s; sync files=7, longest=0.003 s, average=0.002 s; distance=17 kB, estimate=1728 kB
+2023-08-07 23:54:27.193 CEST [34164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,90 @@
+2023-07-25 16:27:56.186 CEST [16488] ERROR:  relation "public.students" does not exist at character 15
+2023-07-25 16:27:56.186 CEST [16488] STATEMENT:  SELECT * FROM public.students
+2023-07-25 16:28:14.074 CEST [16488] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-25 16:28:18.700 CEST [5100] ERROR:  relation "public.students" does not exist at character 15
+2023-07-25 16:28:18.700 CEST [5100] STATEMENT:  SELECT * FROM public.students
+2023-07-25 16:28:29.049 CEST [5100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-25 16:28:31.663 CEST [13152] ERROR:  relation "users" does not exist at character 15
+2023-07-25 16:28:31.663 CEST [13152] STATEMENT:  Select * from users
+2023-07-25 16:30:13.445 CEST [13152] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-25 16:30:15.159 CEST [11844] FATAL:  database "exdperiment" does not exist
+2023-07-25 17:04:02.357 CEST [30524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-25 17:08:55.321 CEST [28776] ERROR:  relation "customers" already exists
+2023-07-25 17:08:55.321 CEST [28776] STATEMENT:  CREATE TABLE customers (
+	  id VARCHAR PRIMARY KEY,
+	  name VARCHAR,
+	  email VARCHAR,
+	  phone VARCHAR,
+	  address VARCHAR
+	);
+2023-07-25 17:13:04.594 CEST [8816] LOG:  checkpoint starting: time
+2023-07-25 17:13:08.722 CEST [8816] LOG:  checkpoint complete: wrote 38 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.076 s, sync=0.030 s, total=4.129 s; sync files=31, longest=0.003 s, average=0.001 s; distance=141 kB, estimate=3106 kB
+2023-07-25 17:27:34.339 CEST [28776] ERROR:  syntax error at or near "//" at character 139
+2023-07-25 17:27:34.339 CEST [28776] STATEMENT:  CREATE TABLE payment_intents (
+	  id VARCHAR PRIMARY KEY,
+	  amount INTEGER,
+	  status VARCHAR,
+	  description TEXT,
+	  customer_id VARCHAR,
+	  // Add more columns as needed
+	);
+2023-07-25 17:28:04.741 CEST [8816] LOG:  checkpoint starting: time
+2023-07-25 17:28:08.293 CEST [8816] LOG:  checkpoint complete: wrote 33 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.503 s, sync=0.030 s, total=3.552 s; sync files=26, longest=0.003 s, average=0.002 s; distance=140 kB, estimate=2809 kB
+2023-07-25 17:58:04.349 CEST [8816] LOG:  checkpoint starting: time
+2023-07-25 17:58:08.384 CEST [8816] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.001 s, sync=0.023 s, total=4.036 s; sync files=31, longest=0.002 s, average=0.001 s; distance=157 kB, estimate=2544 kB
+2023-07-26 00:43:35.929 CEST [24956] FATAL:  database "stripe-integration" does not exist
+2023-07-26 00:43:58.524 CEST [1532] ERROR:  syntax error at or near "-" at character 23
+2023-07-26 00:43:58.524 CEST [1532] STATEMENT:  CREATE DATABASE stripe-integration
+	CREATE DATABASE stripe-integration;
+2023-07-26 00:45:46.897 CEST [8816] LOG:  checkpoint starting: time
+2023-07-26 00:47:28.007 CEST [8816] LOG:  checkpoint complete: wrote 925 buffers (5.6%); 1 WAL file(s) added, 0 removed, 0 recycled; write=100.867 s, sync=0.177 s, total=101.111 s; sync files=249, longest=0.005 s, average=0.001 s; distance=4241 kB, estimate=4241 kB
+2023-07-26 00:50:46.032 CEST [8816] LOG:  checkpoint starting: time
+2023-07-26 00:50:47.462 CEST [8816] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.405 s, sync=0.010 s, total=1.430 s; sync files=8, longest=0.003 s, average=0.002 s; distance=149 kB, estimate=3832 kB
+2023-07-26 00:57:58.726 CEST [27632] ERROR:  bind message supplies 26 parameters, but prepared statement "" requires 3
+2023-07-26 00:57:58.726 CEST [27632] STATEMENT:  INSERT INTO customers (id, name, email) VALUES($1, $2, $3)
+2023-07-26 01:09:05.995 CEST [27632] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:10:58.550 CEST [33656] ERROR:  bind message supplies 26 parameters, but prepared statement "" requires 3
+2023-07-26 01:10:58.550 CEST [33656] STATEMENT:  INSERT INTO customers (id, name, email) VALUES($1, $2, $3)
+2023-07-26 01:13:07.278 CEST [33656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:22:09.284 CEST [27860] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:22:22.403 CEST [35048] ERROR:  bind message supplies 26 parameters, but prepared statement "" requires 3
+2023-07-26 01:22:22.403 CEST [35048] STATEMENT:  INSERT INTO customers (id, name, email) VALUES($1, $2, $3)
+2023-07-26 01:22:25.847 CEST [33580] ERROR:  bind message supplies 26 parameters, but prepared statement "" requires 3
+2023-07-26 01:22:25.847 CEST [33580] STATEMENT:  INSERT INTO customers (id, name, email) VALUES($1, $2, $3)
+2023-07-26 01:28:02.495 CEST [35048] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:28:02.495 CEST [33580] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:32:57.149 CEST [31960] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:32:57.149 CEST [6408] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:32:57.150 CEST [26888] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:32:57.150 CEST [31420] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 01:41:36.031 CEST [3688] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:38.017 CEST [34804] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:38.933 CEST [20096] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:39.261 CEST [29204] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:39.446 CEST [33396] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:39.645 CEST [31372] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:39.851 CEST [31524] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:40.049 CEST [29272] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:40.239 CEST [31112] FATAL:  canceling authentication due to timeout
+2023-07-26 01:41:40.463 CEST [2688] FATAL:  canceling authentication due to timeout
+2023-07-26 02:51:03.670 CEST [8068] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 12:57:21.350 CEST [1824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 12:58:43.956 CEST [35008] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-07-26 12:59:18.215 CEST [37560] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
