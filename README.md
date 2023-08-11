@@ -73,4 +73,4 @@ If you prefer to run the project locally you can follow [the docker build instru
     The docker-compose.yml file defines the services and configurations.
     The Dockerfile sets up the Node.js environment for the project.
     The integration fetches LastPass user and activity data and stores it in a PostgreSQL database.
-    Logging is implemented using Winston.
+    Logging is implemented using Winston. 
