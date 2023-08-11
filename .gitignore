@@ -3,3 +3,7 @@ node_modules/
 
 # Environment variables
 .env
+
+docker-compose.yml
+
+Dockerfile
