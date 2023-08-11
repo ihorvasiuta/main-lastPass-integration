@@ -7,11 +7,20 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install project dependencies using npm ci for deterministic builds
-RUN npm ci --only=production
+# Copy the start script
+COPY start.sh /app/start.sh
+
+# Install project dependencies using npm
+RUN npm install
+
+# Copy the Prisma schema file to the working directory
+COPY schema.prisma ./
+
+# Run prisma to generate the Prisma client 
+RUN npx prisma generate
 
 # Copy the rest of the application code to the container
 COPY . .
 
 # Command to run your application
-CMD ["node", "index.cjs"]
+CMD ["/app/start.sh"]
