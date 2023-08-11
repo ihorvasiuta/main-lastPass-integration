@@ -1,3 +1,5 @@
+//index.cjs
+
 const axios = require('axios');
 const { PrismaClient } = require('@prisma/client');
 const winston = require('winston');
@@ -27,8 +29,8 @@ async function getAndStoreLastPassEvents() {
       provhash: process.env.LASTPASS_PROVHASH,
       cmd: 'reporting',
       data: {
-        from: '2023-07-01 00:00:00',
-        to: '2023-07-31 23:59:59'
+        from: '2023-08-01 00:00:00',
+        to: '2023-08-31 23:59:59'
       }
     });
 
